@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-menu">
+        <h1>Snake Game</h1>
+        <div class="head tile"></div>
+        <p>Choose field size</p>
+        <div class="size-show-wrapper">
+            <div class="size-show">5x5</div>
+        </div>
+       
+        <input type="range" id="input-size" min="10" max="150" step="1" value="5">
+        <button class="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    <div class="container"></div>
+    
+    <div id="lost-screen">
+        <h1 id="lost-label">You Lost</h1>
+        <button id="retry-btn" onclick="restart()">Restart</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
